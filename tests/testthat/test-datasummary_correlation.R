@@ -15,7 +15,7 @@ test_that("Stars don't appear when they shouldnt", {
 test_that("Custom stars appear in output when defined", {
   res <- datasummary_correlation(
     correlation::correlation(mtcars[, 1:3]),
-    stars = c("***" = 0.05),
+    stars = c("+" = .1, "*" = .05, "**" = .01, "***" = 0.001),
     output = "data.frame"
   )
   res <- grepl("***", res[3, 3], fixed = TRUE)
