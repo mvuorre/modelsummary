@@ -127,7 +127,8 @@ Suggests:
     tinytest,
     tinytex,
     webshot2,
-    wesanderson
+    wesanderson,
+    testthat (>= 3.0.0)
 License: GPL-3
 Encoding: UTF-8
 Config/testthat/edition: 3
